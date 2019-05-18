@@ -1,0 +1,10 @@
+tz = $(cat /etc/timezone);
+region, city = tz.split("/")
+
+echo("Best region in the world?")
+
+selection = stdin()
+
+if selection == region {
+  echo("You might be biased...")
+}
