@@ -1,0 +1,7 @@
+var = "/home"
+out = $(ls $var)
+echo(out)
+
+users = $(w|awk {'print $1'})
+time, user, username = users.split('\n')
+echo(time)
